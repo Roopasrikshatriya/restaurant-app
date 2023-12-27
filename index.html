@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant APP</title>
+    <link href="styles/style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="sideNav">
+        <h2>Tables</h2>
+        <input type="text" id='searchTable' placeholder="Search table">
+        <div class="table-main">
+            <div class="table-item" droppable="true" id="table-1" ondragover="handleDragOver(event)"
+                ondrop="handleDrop(event)" onclick="onClickEvent('table-1')" data-items="0" data-price="0">
+                <h1>Table - 1</h1>
+                <p> Rs <span class="amt">0.00</span> | Total items : <span class="item">0</span></p>
+            </div>
+            <div class="table-item" id="table-2" ondragover="handleDragOver(event)" ondrop="handleDrop(event)"
+                onclick="onClickEvent('table-2')" droppable="true" data-items="0" data-price="0">
+                <h1>Table - 2</h1>
+                <p>Rs <span class="amt">0.00</span> | Total items : <span class="item">0</span></p>
+            </div>
+            <div class="table-item" id="table-3" ondragover="handleDragOver(event)" ondrop="handleDrop(event)"
+                onclick="onClickEvent('table-3')" droppable="true" data-items="0" data-price="0">
+                <h1>Table - 3</h1>
+                <p>Rs <span class="amt">0.00</span> | Total items : <span class="item">0</span></p>
+            </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <h2>Menu</h2>
+        <input type="text" id='searchMenu' placeholder="Search menu... by course,by food">
+
+        <div class="menu-container" draggable="true" ondragstart="handleDragStart(event)"></div>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="dialog-header">
+                <span onclick="closeModal()" style="float:right; cursor:pointer;">&times;</span>
+                <h2><span id="table-id">Table - 1 </span> | Order Details </h2>
+            </div>
+            <div class="dialog-table">
+                <table>
+                    <tr>
+                        <td><b>S.No</b></td>
+                        <td><b>item</b></td>
+                        <td><b>Price</b></td>
+                        <td><b>Number of Servings</b></td>
+                        <td><b></b></td>
+                        <td><b></b></td>
+                    </tr>
+                </table>
+            </div>
+            <footer>
+                <button id="bill-generate">CLOSE SESSION (GENERATE BILL)</button>
+            </footer>
+        </div>
+    </div>
+    <script src="service.js"></script>
+</body>
+
+</html>

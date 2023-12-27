@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Crusty Garlic Focaccio with Melted Cheese",
+    "type": "starter",
+    "price": 150.00
+  },
+  {
+    "id": 2,
+    "name": "French Fries",
+    "type": "appetizers",
+    "price": 105.00
+  },
+  {
+    "id": 3,
+    "name": "Home Country Fries with Herbs & Chilli Flakes",
+    "type": "appetizers",
+    "price": 105.00
+  },
+  {
+    "id": 4,
+    "name": "Farm Fresh Veggie Pizza",
+    "type": "main course",
+    "price": 250.00
+  },
+  {
+    "id": 5,
+    "name": "Farm Fresh Non Veg Pizza",
+    "type": "main course",
+    "price": 300.00
+  },
+  {
+    "id": 6,
+    "name": "Chicken Nuggets with Chipotle Sause",
+    "type": "starter",
+    "price": 150.00
+  },
+  {
+    "id": 7,
+    "name": "Choco Lava Cup",
+    "type": "dessert",
+    "price": 200.00
+  },
+  {
+    "id": 8,
+    "name": "Churros with Chocolate Sause",
+    "type": "dessert",
+    "price": 200.00
+  },
+  {
+    "id": 9,
+    "name": "Chocolate Milkshake",
+    "type": "beverage",
+    "price": 80.00
+  },
+  {
+    "id": 10,
+    "name": "Fresh Lime Soda",
+    "type": "beverage",
+    "price": 80.00
+  }
+]
